@@ -1,0 +1,18 @@
+insert into book_managerment_publish(id, name, city, email)
+values (1, "华山出版社", "华山", "hs@163.com"),
+       (2, "明教出版社", "黑木崖", "mj@163.com");
+
+insert into book_managerment_author(id, name, age, gender, tel, addr, birthday)
+values (1, "令狐冲", 25, 1, 13432335433, "华山", "1994-5-23"),
+       (2, "任我行", 58, 1, 13943454554, "黑木崖", "1961-8-13"),
+       (3, "任盈盈", 23, 0, 13878934322, "黑木崖", "1996-5-20");
+
+INSERT INTO book_managerment_book(id, title, price, pub_date, publish_id)
+VALUES (1, "独孤九剑", 200, "2019-1-7", 1),
+       (2, "吸星大法", 180, "2019-1-7", 2),
+       (3, "葵花宝典", 280, "2019-3-15", 2);
+
+INSERT INTO book_managerment_book_authors(id, book_id, author_id)
+VALUES (1, 1, 1),
+       (2, 1, 2),
+       (3, 2, 2);
